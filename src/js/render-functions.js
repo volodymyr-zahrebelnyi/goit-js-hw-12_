@@ -3,7 +3,7 @@ import 'izitoast/dist/css/iziToast.min.css';
 import SimpleLightbox from 'simplelightbox';
 import 'simplelightbox/dist/simple-lightbox.min.css';
 
-const loader = document.querySelector('.loader');
+const loader = document.querySelector('.js-loader');
 
 export function createMarkup(hits) {
   return hits

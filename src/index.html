@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>goit-js-hw-11</title>
+    <title>Image Search</title>
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/2.0.0/modern-normalize.min.css"
@@ -27,9 +27,17 @@
       </form>
     </div>
     <div class="gallery-container">
-      <ul class="gallery js-gallery">
+      <ul class="gallery js-gallery"></ul>
+      <div class="loader-wrap">
         <span class="loader js-loader"></span>
-      </ul>
+        <span class="loader-text js-loader"
+          >Loading images, please wait...</span
+        >
+      </div>
+      <button type="button" class="btn-load-more" data-action="load-more">
+        Load more
+      </button>
+      <button type="button" class="up-button js-btn-up">⇧</button>
     </div>
     <script type="module" src="./main.js"></script>
     <script type="module" src="./js/pixabay-api.js"></script>
