@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Image Search</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/2.0.0/modern-normalize.min.css"
+      integrity="sha512-4xo8blKMVCiXpTaLzQSLSw3KFOVPWhm/TRtuPVc4WG6kUgjH6J03IBuG7JZPkcWMxJ5huwaBpOpnwYElP/m6wg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    
+    <script type="module" crossorigin src="/goit-js-hw-12_/commonHelpers.js"></script>
+    <link rel="modulepreload" crossorigin href="/goit-js-hw-12_/assets/vendor-ee72e1a4.js">
+    <link rel="stylesheet" href="/goit-js-hw-12_/assets/vendor-1cd1f9d9.css">
+    <link rel="stylesheet" href="/goit-js-hw-12_/assets/index-86182b42.css">
+  </head>
+  <body>
+    <div class="form-container">
+      <form class="search-form js-search-form">
+        <input
+          type="text"
+          class="search-input"
+          placeholder="Search images..."
+          name="query"
+        />
+        <button type="submit" class="search-btn">Search</button>
+      </form>
+    </div>
+    <div class="gallery-container">
+      <ul class="gallery js-gallery"></ul>
+      <div class="loader-wrap">
+        <span class="loader js-loader"></span>
+        <span class="loader-text js-loader"
+          >Loading images, please wait...</span
+        >
+      </div>
+      <button type="button" class="btn-load-more" data-action="load-more">
+        Load more
+      </button>
+      <button type="button" class="up-button js-btn-up">⇧</button>
+    </div>
+    
+    
+    
+  </body>
+</html>
